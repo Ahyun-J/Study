@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main_Page</title>
+    <style>
+        .mytitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 30px;
+        }
+
+        .btn {
+            width: 300px;
+            height: 40px;
+            border: 2px solid #e8344e;
+
+            text-align: center;
+            line-height: 40px;
+
+            text-decoration: none;
+            color: #e8344e;
+
+            font-weight: bold;
+
+            border-radius: 150px;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: #e8344e;
+        }
+
+        .box {
+            width: 1000px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin: 40px auto 0px auto;
+        }
+
+        .map {
+            width: 500px;
+            height: 500px;
+
+            margin-right: 30px;
+
+            border-radius: 24px;
+        }
+
+        .story {
+            width: 450px;
+            height: 500px;
+
+            /* background-color: blue; */
+        }
+
+        .img {
+            width: 450px;
+            height: 300px;
+
+            background-image: url('image.jpg');
+            background-position: center;
+            background-size: cover;
+
+            border-radius: 24px;
+        }
+
+        .story>h2 {
+            color: #1D9ADD;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .story>h3 {
+            color: gray;
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .story>p {
+            line-height: 24px;
+        }
+    </style>
+<!-- 
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=535068688f1a8bca1c21a9445ede0a89"></script>
+    <script>
+        var markerPosition = new kakao.maps.LatLng(35.657004628101134, 139.74291779569234)
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+            mapOption = {
+                center: markerPosition, // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        var imageSrc = "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/2021_05_free_parents/sparta-marker.png";
+        var imageSize = new kakao.maps.Size(65, 86);
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: markerPosition,
+            image: markerImage
+        });
+
+    </script> -->
+
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=535068688f1a8bca1c21a9445ede0a89"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(35.657004628101134, 139.74291779569234),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script> 
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>나의 ◆◆◆를 공유합니다</h1>
+        <a class="btn" href="https://namu.wiki/w/%EC%95%84%EB%A7%88%EB%AF%B8%EB%84%A4%20%EC%8A%88" target="_blank">아마미네
+            슈 정보 읽어보러 가기> </a>
+    </div>
+    <!-- <div class="box">
+        <div class="map" id="map"></div>
+        <div class="story">
+            <div class="img"></div>
+            <h2>장소명이 들어갑니다.</h2>
+            <h3>주소가 들어갑니다.</h3>
+            <p>
+                내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다.
+            </p>
+        </div>
+    </div> -->
+    <div class="box">
+        <div class="map" id="map"></div>
+        <div class="story">
+            <div class="img"></div>
+            <h2>아마미네 슈</h2>
+            <h3>출신지 도쿄</h3>
+            <p>
+                특기 : 오른손과 왼손으로 동시에 다른 게임을 할 수 있다.<br>
+                이미지 컬러 : ◆ #1D9ADD
+            </p>
+        </div>
+    </div>
+
+    <div class="mytitle">
+        <a class="btn" href="https://namu.wiki/w/%EC%8B%9C%EB%9D%BC%EC%9D%B4%EC%8B%9C%20%EC%95%88#s-6.1.1"
+            target="_blank">
+            시라이시 안 정보 읽어보러 가기> </a>
+    </div>
+    <div class="box">
+        <div class="map" id="map2"></div>
+        <div class="story">
+            <div class="img" style="background-image: url('image2.png');"></div>
+            <h2 style="color: #00bbdc;">시라이시 안</h2>
+            <h3>카미야마 고교</h3>
+            <p>
+                특기 : 커피나 홍차 내리기<br>
+                이미지 컬러 : ◆ #00bbdc
+            </p>
+        </div>
+    </div>
+
+    <div class="mytitle">
+        <a class="btn" href="https://namu.wiki/w/%EC%BF%A0%EB%A1%9C%EB%B0%94%20%EC%B9%B4%EC%9D%B4%ED%86%A0"
+            target="_blank">
+            쿠로바 카이토 정보 읽어보러 가기> </a>
+    </div>
+    <div class="box">
+        <div class="map" id="map2"></div>
+        <div class="story">
+            <div class="img" style="background-image: url('image3.jpeg');"></div>
+            <h2 style="color: #22b4e5;">쿠로바 카이토</h2>
+            <h3>에쿄다 고교/고은고등학교</h3>
+            <p>
+                좋아하는 것 : 나카모리 아오코<br>
+                싫어하는 것 : 생선 <br>
+                특기 : 변장, 마술, <del>도둑질</del><br>
+                이미지 컬러 : ◆ 청자색
+            </p>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script> -->
+</body>
+
+</html>
