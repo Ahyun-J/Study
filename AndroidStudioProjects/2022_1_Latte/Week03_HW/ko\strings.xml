@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3주차</string>
+    <string name="sub_name">SUBACTIVITY로 이동</string>
+    <string name="third_name">THIRDACTIVITY로 이동</string>
+</resources>
