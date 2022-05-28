@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Week03_HW</string>
+    <string name="sub_name">goto SUBACTIVITY</string>
+    <string name="third_name">goto THIRDACTIVITY</string>
+</resources>
