@@ -1,0 +1,61 @@
+j_03_조아현_20215247
+
+//SmartPhone 클래스
+//
+package week3;
+
+public class SmartPhone extends Phone  {
+	private boolean hasBluetooth;
+	
+	public SmartPhone() {
+		this("None", 0, false);
+	}
+	public SmartPhone(String m, int p, boolean b) {
+		super(m, p); //Phone 변수 가져오기?
+		this.hasBluetooth = b;
+	}
+		
+	public boolean getHasBluetooth() {
+		return this.hasBluetooth;
+		
+	}
+	
+	public void setHasBluetooth(boolean hasBluetooth) {
+		this.hasBluetooth = hasBluetooth;
+	}
+
+	@Override
+	public String toString() {
+		return "Phone[maker=" + getMaker() + ", price=" + getPrice() + "], "
+				+ "SmartPhone[hasBluetooth=" + hasBluetooth + "]";
+	}
+	
+}
+
+//
+// PhoneTest 클래스
+//
+package week3;
+
+public class PhoneTest {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			
+			Phone [] p = {
+					new Phone(),
+					new Phone("SAM",100),
+					new SmartPhone(),
+					new SmartPhone("LG",50,true)
+					
+			};
+			
+			for(int i = 0; i<p.length ;i++) {	
+				System.out.println(p[i]); // 배열 순서대로 출력
+		}
+
+	}
+
+}
+
+//

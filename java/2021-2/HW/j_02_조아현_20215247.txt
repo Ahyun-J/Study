@@ -1,0 +1,50 @@
+핸드폰에 폰 번호,현재 전원 상태 저장
+핸드폰 처음생성 폰 번호 저장 true
+전체 수량 count
+전원버튼을 누를 때 마다 토글 on/off
+현재 상태 문자열로 리턴
+telNum
+power
+count
+toString()
+powerToggle()
+getCount() 등 이용
+
+package week2;
+
+public class CellPhone {
+	private String telNum;
+	private boolean power = true;
+	private static int count;
+	private String p = "on";
+
+	CellPhone(){
+		this("null");
+	}
+	
+	CellPhone(String t){
+		this.telNum = t;
+		count++;
+	}
+
+	public void powerToggle() {
+		if(power = true) {
+			power = false;
+			p = "off";
+		}
+		else {
+			power = true;
+			p = "on";
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "전화 번호 : " + telNum + ", 전원 상태 : " + p ;
+	}
+	static int getCount() {
+		return count;
+	}
+	
+
+}
