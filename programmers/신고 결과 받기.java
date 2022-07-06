@@ -28,15 +28,15 @@ class Solution {
         
         for(int i=0; i<size; i++) {
             // 2차원 배열 돌면서 k번이상 신고받으면 
-            int count = 0;
+            int cnt = 0;
             
             for(int j=0; j<size; j++) {
                 if(reportId[j][i] == 1) {
-                    count++;
+                    cnt++;
                 }
             }
             
-            if(count >= k) { 
+            if(cnt >= k) { 
                 for(int j=0; j<size; j++) {
                     //신고한 사람한테 메일
                     if(reportId[j][i] == 1) {
