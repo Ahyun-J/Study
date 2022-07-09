@@ -36,9 +36,9 @@ class Solution {
             
             answer[i] = i+1;
             //System.out.print(stages[i]+"-s ");
-            System.out.print(arrive+"-a ");
-            System.out.print(noClear+"-n ");
-            System.out.print(fail[i]+"-f ");
+            //System.out.print(arrive+"-a ");
+            //System.out.print(noClear+"-n ");
+            //System.out.print(fail[i]+"-f ");
         }
         
         if(allClear == 1){
