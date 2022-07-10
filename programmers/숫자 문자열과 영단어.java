@@ -1,10 +1,12 @@
 class Solution {
     public int solution(String s) {
         int answer = 0;
+	    
         // String[] split = s.split("\\D+");
         // for(int i = 0; i<split.length;i++){
         //     System.out.print(split[i]);
         // }
+	    
         String word[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 		String number[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 		
