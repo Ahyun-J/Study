@@ -112,6 +112,31 @@ fun main() {
 
 //---------------------
 // 12 나머지
+import java.util.*
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    var A = scanner.nextInt()
+    var B = scanner.nextInt()
+    var C = scanner.nextInt()
+    
+    println((A+B)%C)
+    println(((A%C) + (B%C))%C)
+    println((A*B)%C)
+    println(((A%C) * (B%C))%C)
+}
 
 //---------------------
 // 13 곱셈
+import java.util.*
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    var a = scanner.nextInt()
+    var b = scanner.nextInt()
+
+    println(a*(b%10))
+	println(a*(b%100/10))
+	println(a*(b/100))
+	println(a*b)
+}
