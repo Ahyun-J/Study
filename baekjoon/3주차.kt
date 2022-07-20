@@ -19,7 +19,28 @@ fun main(){
 
 //------------------
 // 5. 알람 시계 (2884)
+import java.util.*
 
+fun main(){
+    val scanner = Scanner(System.`in`)
+    var h = scanner.nextInt()
+    var m = scanner.nextInt()
+    
+    when(m){
+        in 45..59 -> {
+            m = m-45
+            print("$h $m")
+            }
+        else -> {
+            if(h==0){
+                h = 24
+            }
+                h = h-1
+                m = 60+m-45
+                print("$h $m")
+        }
+    }
+}
 
 // 반복문 ------------------
 // 7. A+B - 7 (11021)
