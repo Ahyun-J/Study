@@ -61,11 +61,39 @@ fun main(){
 
 //------------------
 // 8. A+B - 8 (11022)
+import java.util.*
 
+fun main(){
+    val scanner = Scanner(System.`in`)
+    var n = scanner.nextInt()
+
+    for(x in 1..n){
+        var a = scanner.nextInt()
+        var b = scanner.nextInt()
+        var sum = a+b
+        
+        println("Case #$x: $a + $b = $sum")
+    }    
+}
 
 //------------------
 // 10. 별 찍기 2 (2439)
+import java.util.*
 
+fun main(){
+    val scanner = Scanner(System.`in`)
+    var n = scanner.nextInt()
+
+    for(x in 1..n){
+        for (i in 1..n-x) {
+          print(" ")
+        }
+        for (j in 1..x) {
+          print("*")
+        }
+       println()
+   }    
+}
 
 // 1차원 배열 ------------------
 // 6. OX퀴즈 (8958)
