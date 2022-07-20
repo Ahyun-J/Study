@@ -44,7 +44,20 @@ fun main(){
 
 // 반복문 ------------------
 // 7. A+B - 7 (11021)
+import java.util.*
 
+fun main(){
+    val scanner = Scanner(System.`in`)
+    var n = scanner.nextInt()
+
+    for(x in 1..n){
+        var a = scanner.nextInt()
+        var b = scanner.nextInt()
+        var sum = a+b
+        
+        println("Case #$x: $sum")
+    }    
+}
 
 //------------------
 // 8. A+B - 8 (11022)
