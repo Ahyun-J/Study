@@ -113,7 +113,6 @@ fun main() = with(Scanner(System.`in`)) {
                 count = 1
             }
         }
-
         println(result)
     }
 }
