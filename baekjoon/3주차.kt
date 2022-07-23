@@ -116,6 +116,27 @@ fun main() = with(Scanner(System.`in`)) {
         println(result)
     }
 }
+//----
+import java.util.*
+
+fun main() {
+    var scanner = Scanner(System.`in`)
+    val num = scanner.nextInt()
+
+    for(i in 0 until num) {
+        val ox = scanner.next()
+        var count = 1
+        var result = 0
+        ox.forEach {
+            if (it == 'O') {
+                result += count++
+            } else {
+                count = 1
+            }
+        }
+        println(result)
+    }
+}
 
 //------------------
 //? 7. 평균은 넘겠지 (4344)
