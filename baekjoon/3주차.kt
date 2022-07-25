@@ -99,26 +99,6 @@ fun main(){
 //? 6. OX퀴즈 (8958)
 import java.util.*
 
-fun main() = with(Scanner(System.`in`)) {
-    val num = nextInt()
-
-    repeat(num) {
-        val ox = next()
-        var count = 1
-        var result = 0
-        ox.forEach {
-            if (it == 'O') {
-                result += count++
-            } else {
-                count = 1
-            }
-        }
-        println(result)
-    }
-}
-//----
-import java.util.*
-
 fun main() {
     var scanner = Scanner(System.`in`)
     val num = scanner.nextInt()
@@ -138,8 +118,31 @@ fun main() {
     }
 }
 
+//----
+import java.util.*
+
+fun main() = with(Scanner(System.`in`)) {
+    val num = nextInt()
+
+    repeat(num) {
+        val ox = next()
+        var count = 1
+        var result = 0
+        ox.forEach {
+            if (it == 'O') {
+                result += count++
+            } else {
+                count = 1
+            }
+        }
+        println(result)
+    }
+}
+
 //------------------
 //? 7. 평균은 넘겠지 (4344)
+
+//----
 import java.util.*
 
 fun main() = with(Scanner(System.`in`)) {
