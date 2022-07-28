@@ -141,6 +141,39 @@ fun main() = with(Scanner(System.`in`)) {
 
 //------------------
 //? 7. 평균은 넘겠지 (4344)
+import java.util.*
+
+fun main() {
+    var scanner = Scanner(System.`in`)
+    val num = scanner.nextInt()
+
+    for(i in 0 until num) {
+        val n = scanner.nextInt()
+        val array = IntArray(n)
+
+        for (i in array.indices) {
+        array[i] = scanner.nextInt()
+        }
+        
+        var total = 0
+        for (i in array.indices) {
+        total += array[i]
+        }
+
+        val average = total / n
+        
+        var student = 0
+        for (i in array.indices) {
+        if (array[i] > average) {
+            student++
+            }
+        }
+        
+        val aver = (student.toDouble() / n.toDouble()) * 100
+        var result = String.format("%.3f%%", aver)
+        println(result)
+    }
+}
 
 //----
 import java.util.*
